@@ -1,4 +1,8 @@
 export default {
+  'post-list': '职位',
+  'personnel-list': '人才',
+  'interview-list': '面试',
+  'post_list_page': '职位',
   home: '首页',
   login: '登录',
   components: '组件',

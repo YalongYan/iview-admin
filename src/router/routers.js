@@ -246,64 +246,122 @@ export default [
   //     }
   //   ]
   // },
-  {
-    path: '/excel',
-    name: 'excel',
-    meta: {
-      icon: 'ios-stats',
-      title: 'EXCEL导入导出'
-    },
-    component: Main,
-    children: [
-      // {
-      //   path: 'upload-excel',
-      //   name: 'upload-excel',
-      //   meta: {
-      //     icon: 'md-add',
-      //     title: '导入EXCEL'
-      //   },
-      //   component: () => import('@/view/excel/upload-excel.vue')
-      // },
-      {
-        path: 'export-excel',
-        name: 'export-excel',
-        meta: {
-          icon: 'md-download',
-          title: '导出EXCEL'
-        },
-        component: () => import('@/view/excel/export-excel.vue')
-      },
-      {
-        path: 'fill-form',
-        name: 'fill-form',
-        meta: {
-          icon: 'md-download',
-          title: '填写表单'
-        },
-        component: () => import('@/view/excel/fill-form.vue')
-      }
-    ]
-  },
   // {
-  //   path: '/tools_methods',
-  //   name: 'tools_methods',
+  //   path: '/excel',
+  //   name: 'excel',
   //   meta: {
-  //     hideInBread: true
+  //     icon: 'ios-stats',
+  //     title: 'EXCEL导入导出'
   //   },
   //   component: Main,
   //   children: [
+  //     // {
+  //     //   path: 'upload-excel',
+  //     //   name: 'upload-excel',
+  //     //   meta: {
+  //     //     icon: 'md-add',
+  //     //     title: '导入EXCEL'
+  //     //   },
+  //     //   component: () => import('@/view/excel/upload-excel.vue')
+  //     // },
   //     {
-  //       path: 'tools_methods_page',
-  //       name: 'tools_methods_page',
+  //       path: 'export-excel',
+  //       name: 'export-excel',
   //       meta: {
-  //         icon: 'ios-hammer',
-  //         title: '工具方法',
-  //         beforeCloseName: 'before_close_normal'
+  //         icon: 'md-download',
+  //         title: '导出EXCEL'
   //       },
-  //       component: () => import('@/view/tools-methods/tools-methods.vue')
+  //       component: () => import('@/view/excel/export-excel.vue')
+  //     },
+  //     {
+  //       path: 'post-list',
+  //       name: 'post-list',
+  //       meta: {
+  //         icon: 'md-download',
+  //         title: '职位列表'
+  //       },
+  //       component: () => import('@/view/position/list.vue')
+  //     },
+  //     {
+  //       path: 'interview-list',
+  //       name: 'interview-list',
+  //       meta: {
+  //         icon: 'md-download',
+  //         title: '面试列表'
+  //       },
+  //       component: () => import('@/view/interview/list.vue')
+  //     },
+  //     {
+  //       path: 'personnel-list',
+  //       name: 'personnel-list',
+  //       meta: {
+  //         icon: 'md-download',
+  //         title: '人才列表'
+  //       },
+  //       component: () => import('@/view/personnel/list.vue')
   //     }
   //   ]
   // },
+  {
+    path: '/personnel-list',
+    name: 'personnel-list',
+    meta: {
+      hideInBread: true
+    },
+    component: Main,
+    children: [
+      {
+        path: '/',
+        name: 'personnel-list',
+        meta: {
+          // icon: 'ios-hammer',
+          title: '人才',
+          beforeCloseName: 'before_close_normal'
+        },
+        component: () => import('@/view/personnel/list.vue')
+      }
+    ]
+  },
+  {
+    path: '/post_list',
+    name: 'post_list',
+    meta: {
+      hideInBread: true
+    },
+    component: Main,
+    children: [
+      {
+        path: '/',
+        name: 'post_list_page',
+        meta: {
+          // icon: 'ios-hammer',
+          title: '职位',
+          beforeCloseName: 'before_close_normal'
+        },
+        component: () => import('@/view/position/list.vue')
+      }
+    ]
+  },
+  {
+    path: '/interview-list',
+    name: 'interview-list',
+    meta: {
+      hideInBread: true
+    },
+    component: Main,
+    children: [
+      {
+        path: '/',
+        name: 'interview-list',
+        meta: {
+          // icon: 'ios-hammer',
+          title: '面试',
+          beforeCloseName: 'before_close_normal'
+        },
+        component: () => import('@/view/interview/list.vue')
+      }
+    ]
+  },
   // {
   //   path: '/i18n',
   //   name: 'i18n',

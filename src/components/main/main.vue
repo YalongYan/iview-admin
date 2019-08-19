@@ -185,3 +185,9 @@ export default {
   }
 }
 </script>
+
+<style lang='less'>
+  .ivu-layout{
+    background: white;
+  }
+</style>
